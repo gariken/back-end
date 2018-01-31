@@ -1,0 +1,184 @@
+ru:
+  devise:
+    failure:
+      admin_user:
+        not_found_in_database: Неверный логин или пароль.
+  active_admin:
+    dashboard: Панель управления
+  formtastic:
+    actions:
+      create: "Создать"
+      update: "Изменить"
+  activerecord:
+    models:
+      payment:
+        one: Оплата
+        other: Оплата
+        many: Оплата
+        few: Оплата
+      dispatcher_admin_user:
+        one: Диспетчер
+        other: Диспетчеры
+        many: Диспетчеры
+        few: Диспетчеры
+      senior_dispatcher_admin_user:
+        one: Старший диспетчер
+        other: Старшие диспетчеры
+        many: Старшие диспетчеры
+        few: Старшие диспетчеры
+      order_option:
+        one: Опция заказов
+        other: Опции заказов
+        many: Опции заказов
+        few: Опции заказов
+      tariff:
+        one: Тариф
+        other: Тарифы
+        many: Тарифов
+        few: Тарифов
+      user:
+        one: Пользователь
+        other: Пользователи
+        many: Пользователи
+        few: Пользователи
+      driver:
+        one: Водитель
+        other: Водители
+        many: Водителей
+        few: Водителей
+      order:
+        one: Заказ
+        other: Заказы
+        many: Заказов
+        few: Заказов
+      admin_user:
+        one: Администратор
+        other: Администраторы
+        many: Администраторы
+        few: Администраторы
+    attributes:
+      payment:
+        description: Описание
+        amount: Стоимость
+        user_id: Пользователь
+        order_id: Заказ
+        user: Пользователь
+        order: Заказ
+        status: Статус
+        card_id: Карта
+        payment_method: Метод оплаты
+        data: Другие данные
+        created_at: Дата создания
+        updated_at: Дата обновления
+      order_option:
+        description: Описание
+        status: Статус
+        price: Цена
+        created_at: Дата создания
+        updated_at: Дата обновления
+      tariff:
+        waiting_price: Цена за минуту ожидания
+        price_per_kilometer: Цена за километр
+        night_price_per_kilometer: Ночная цена за километр (с 23:00 до 06:00)
+        percentage_of_driver: Ставка водителя при регистрации
+        free_waiting_minutes: Количество бесплатных минут ожидания
+        driver_rate_increase_by_orders: Число повышения ставки водителя каждые 200 заказов
+        driver_rate_increase_by_rating: Число повышения ставки водителя, если его рейтинг выше 4.5
+        driver_rate_increase_by_photo: Число повышения ставки водителя за добавление фото
+        max_driver_rate: Максимальная ставка водителя
+        min_order_amount: Минимальная стоимость заказа
+        position: Позиция
+        priority: Приоритет
+        name: Название
+        status: Статус
+        max_commission: Максимальная комиссия
+        created_at: Дата создания
+        updated_at: Дата обновления
+      user:
+        phone_number: Номер телефона
+        name: Имя
+        sex: Пол
+        surname: Фамилия
+        password: Пароль
+        encrypted_password: Пароль
+        status: Статус
+        photo: Фотография
+        created_at: Дата создания
+        updated_at: Дата обновления
+      driver:
+        phone_number: Номер телефона
+        name: Имя
+        surname: Фамилия
+        password: Пароль
+        car_model: Модель автомобиля
+        car_color: Цвет автомобиля
+        tariff_id: Тариф
+        tariff: Тариф
+        photo: Фотография
+        license: Водительское удостверение
+        licence_plate: Номер автомобиля
+        balance: Баланс
+        points: Баллы
+        confirmed: Подтвержден
+        status: Статус
+        rating: Рейтинг
+        interest_rate: Процентная ставка
+        increased_interest_rate_by_rating: Процентная ставка повышена засчет рейтинга
+        encrypted_password: Пароль
+        created_at: Дата создания
+        updated_at: Дата обновления
+      order:
+        review: Отзыв
+        user_id: Пользователь
+        driver_id: Водитель
+        tariff_id: Тариф
+        user: Пользователь
+        driver: Водитель
+        payment: Метод оплаты
+        payment_method: Метод оплаты
+        lat_from: Широта начала
+        lat_to: Широта конца
+        lon_from: Долгота начала
+        lon_to: Долгота конца
+        status: Статус
+        comment: Комментарий
+        rating: Оценка
+        amount: Стоимость
+        order_options: Опции заказа
+        order_option_ids: Опции заказа
+        address_from: Адрес начала
+        address_to: Адрес конца
+        distance: Расстояние (км)
+        waiting_minutes: Минуты ожидания
+        time_of_taking: Время принятия заказа
+        start_waiting_time: Время начала ожидания
+        time_of_starting: Время начала движения
+        time_of_closing: Время закрытия заказа
+        with_child_seat: С детским креслом
+        with_animals: С животными
+        tariff: Тариф
+        removing_status: Статус удаления
+        created_at: Дата создания
+        updated_at: Дата обновления
+      admin_user:
+        email: Электронная почта
+        current_sign_in_at: Текущий вход
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+        created_at: Дата создания
+        updated_at: Дата обновления
+      dispatcher_admin_user:
+        email: Электронная почта
+        current_sign_in_at: Текущий вход
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+        created_at: Дата создания
+        updated_at: Дата обновления
+      senior_dispatcher_admin_user:
+        email: Электронная почта
+        current_sign_in_at: Текущий вход
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+        created_at: Дата создания
+        updated_at: Дата обновления
+

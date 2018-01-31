@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV.fetch("POSTGRES_DB_HOST") { 'localhost' } %>
+  port: <%= ENV.fetch("POSTGRES_DB_PORT") { '5432' } %>
+  username: <%= ENV.fetch("POSTGRES_DB_USERNAME") { 'postgres' } %>
+  password: <%= ENV.fetch("POSTGRES_DB_PASSWORD") { '' } %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: <%= ENV.fetch("POSTGRES_DB") { 'taxi_development' } %>
+
+test:
+  <<: *default
+  database: <%= ENV.fetch("POSTGRES_DB") { 'taxi_test' } %>
+
+staging:
+  <<: *default
+  database: <%= ENV.fetch("POSTGRES_DB") { 'taxi' } %>
+
+production:
+  <<: *default
+  database: <%= ENV.fetch("POSTGRES_DB") { 'taxi' } %>

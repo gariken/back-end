@@ -1,0 +1,12 @@
+development:
+  adapter: async
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379" } %>
+  # host: <%= ENV.fetch("REDIS_HOST") { "localhost" } %>
+  # port: <%= ENV.fetch("REDIS_PORT") { "6379s" } %>
+  channel_prefix: taxi_backend_production
